@@ -26,7 +26,6 @@ public class Employee {
         @NotEmpty
         private String address;
         @NotEmpty
-        @Size(min = 10,max = 10)
         private String phone;
 
 

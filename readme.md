@@ -5,7 +5,7 @@
 <ul>
 <li>Les entités clés de ce projet incluent un Docteur, un Administrateur, une Consultation, un Patient et un rendez-vous (Appointment).</li>
 <br>
-<img src="../manageHospital.png" alt="entités"/>
+<img src="src/main/resources/static/manageHospital.png" alt="entités"/>
 <br>
 <li>Le Docteur peut consulter les rendez-vous qu'il a fixé avec les patients, il peut aussi ajouter un rendez-vous, modifier un rendez-vous et supprimer un rendez-vous.</li>
 <li>Les Administrateurs pourront gérer les informations relatives aux patients, à l'hôpital et au personnel.</li>
