@@ -16,5 +16,5 @@
 <h3>Les travaux accomplis à ce jour </h3>
 <ul>
 <li>Les travaux accomplis à ce jour comprennent la finalisation de la gestion des entités clés telles que le Doctor, l'Administrator, l'Appointment, le Patient et la Consultation dans la partie backend. </li>
-<li>Du côté frontend, l'interface utilisateur pour la gestion des patients a été achevée tandis que l'interface pour la gestion des docteurs est en cours de développement</li>
+<li>Du côté frontend, l'interface utilisateur pour la gestion des patients,docteurs,consultations et des rendez-vous a été achevée. </li>
 </ul>
