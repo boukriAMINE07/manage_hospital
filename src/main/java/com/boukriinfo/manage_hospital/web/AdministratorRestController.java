@@ -46,6 +46,10 @@ public class AdministratorRestController {
         }
 
     }
+    @GetMapping("/administrators/all")
+    public List<Administrator> getAllAdministrators() {
+        return administratorService.getAdministrators();
+    }
 
     @GetMapping("/administrators/{id}")
     public Administrator getAdministratorById(@PathVariable(name = "id") Long id) {

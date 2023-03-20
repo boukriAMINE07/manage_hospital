@@ -47,6 +47,11 @@ public class ConsultationRestController {
 
         }
     }
+    @GetMapping("/consultations/all")
+    public List<Consultation> getAllConsultations() {
+        return consultationService.getConsultations();
+    }
+
     @GetMapping("/consultations/{id}")
     public Consultation getConsultation(@PathVariable(name = "id") Long id) {
         return consultationService.getConsultation(id);

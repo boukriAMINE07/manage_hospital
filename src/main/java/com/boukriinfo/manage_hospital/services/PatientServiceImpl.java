@@ -8,6 +8,8 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 @Transactional
 @AllArgsConstructor
@@ -17,6 +19,11 @@ public class PatientServiceImpl implements PatientService {
     public Page<Patient> getAllPatients(int page, int size) {
         Page<Patient> pageAllPatients = patientRepository.findAll(PageRequest.of(page, size));
         return pageAllPatients;
+    }
+
+    @Override
+    public List<Patient> getAllPatients() {
+        return patientRepository.findAll();
     }
 
     @Override

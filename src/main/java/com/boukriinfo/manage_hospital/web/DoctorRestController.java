@@ -45,6 +45,10 @@ public class DoctorRestController {
 
         }
     }
+    @GetMapping("/doctors/all")
+    public List<Doctor> getDoctor() {
+        return doctorService.getAllDoctors();
+    }
     @GetMapping("/doctors/{id}")
     public Doctor getDoctor(@PathVariable(name = "id") Long id) {
         return doctorService.getDoctor(id);

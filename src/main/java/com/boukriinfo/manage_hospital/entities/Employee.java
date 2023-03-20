@@ -15,7 +15,7 @@ public class Employee {
         @GeneratedValue(strategy = GenerationType.TABLE)
         private Long id;
         @NotEmpty
-        @Size(min = 4,max = 25)
+        @Size(min = 3,max = 25)
         private String name;
         @NotEmpty
         @Column(length = 100)

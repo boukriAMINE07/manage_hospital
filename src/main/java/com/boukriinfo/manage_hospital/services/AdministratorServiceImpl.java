@@ -9,6 +9,8 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 @Transactional
 @AllArgsConstructor
@@ -17,6 +19,11 @@ public class AdministratorServiceImpl implements AdministratorService {
     @Override
     public Page<Administrator> getAllAdministrators(int page, int size) {
         return administratorRepository.findAll(PageRequest.of(page, size)) ;
+    }
+
+    @Override
+    public List<Administrator> getAdministrators() {
+        return administratorRepository.findAll();
     }
 
     @Override

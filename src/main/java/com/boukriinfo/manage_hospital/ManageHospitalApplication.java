@@ -45,7 +45,7 @@ public class ManageHospitalApplication {
     //@Bean
     CommandLineRunner saveDoctor(DoctorRepository doctorRepository) {
         return args -> {
-            Stream.of("Amir", "Malak", "Sara", "Ayoub", "Karim")
+            Stream.of("Jad", "Jamal", "Alaa", "Mouad")
                     .forEach(name -> {
                         Doctor doctor = new Doctor();
                         doctor.setName(name);
@@ -53,7 +53,7 @@ public class ManageHospitalApplication {
                         doctor.setGender(Math.random() > 0.5 ? Gender.MALE : Gender.FEMALE);
                         doctor.setPhone("0623456789");
                         doctor.setEmail(name + "@gmail.com");
-                        doctor.setSpeciality(Math.random() > 0.5 ? Speciality.DERMATOLOGIST : Speciality.NEUROLOGIST);
+                        doctor.setSpeciality(Math.random() > 0.5 ? Speciality.DENTIST : Speciality.DERMATOLOGIST);
                         doctor.setPassword("123456");
                         doctorRepository.save(doctor);
                     });

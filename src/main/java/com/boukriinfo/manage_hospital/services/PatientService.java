@@ -6,9 +6,13 @@ import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 
 public interface PatientService {
     public Page<Patient> getAllPatients(int page, int size);
+    public List<Patient> getAllPatients();
+
     public Patient getPatient(Long id);
     public Patient savePatient(Patient patient);
     public Patient updatePatient(Patient patient);

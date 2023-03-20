@@ -45,6 +45,10 @@ public class AppointmentRestController {
 
         }
     }
+    @GetMapping("/appointments/all")
+    public List<Appointment> getAppointment() {
+        return appointmentService.getAllAppointments();
+    }
     @GetMapping("/appointments/{id}")
     public Appointment getAppointment(@PathVariable(name = "id") Long id) {
         return appointmentService.getAppointment(id);

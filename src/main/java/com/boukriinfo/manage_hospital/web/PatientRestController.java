@@ -20,11 +20,10 @@ import java.util.Map;
 @CrossOrigin("*")
 public class PatientRestController {
     private PatientService patientService;
-    private PatientRepository patientRepository;
 
-    @GetMapping("/allPatients")
+    @GetMapping("/patients/all")
     public List<Patient> getPatients() {
-        return patientRepository.findAll();
+        return patientService.getAllPatients();
     }
 
     @GetMapping("/patients")
